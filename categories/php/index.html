@@ -6,17 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://qiprince.com">
-  <title>[object Object] | Weaving</title>
+  <title>Category: php | Weaving</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春。浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[object Object]">
-<meta property="og:url" content="https://qiprince.com/2016/12/16/针对于一台电脑配置不同主机的git设置/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Weaving">
+<meta property="og:url" content="https://qiprince.com/categories/php/index.html">
 <meta property="og:site_name" content="Weaving">
 <meta property="og:description" content="一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春。浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。">
-<meta property="og:updated_time" content="2016-12-16T12:52:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[object Object]">
+<meta name="twitter:title" content="Weaving">
 <meta name="twitter:description" content="一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春。浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。">
   
   
@@ -156,53 +155,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-针对于一台电脑配置不同主机的git设置" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-psysh-php交互式控制台" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      [object Object]
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/19/psysh-php交互式控制台/">psysh--php交互式控制台</a>
     </h1>
   
 
-        <a href="/2016/12/16/针对于一台电脑配置不同主机的git设置/" class="archive-article-date">
-  	<time datetime="2016-12-16T09:06:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-16</time>
+        <a href="/2016/12/19/psysh-php交互式控制台/" class="archive-article-date">
+  	<time datetime="2016-12-19T04:37:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-19</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         
+         <div style="overflow:hidden;height:322px;"><h5 id="psysh-官网"><a href="#psysh-官网" class="headerlink" title="psysh 官网"></a>psysh 官网</h5><ul>
+<li><a href="http://https://github.com/bobthecow/psysh" target="_blank" rel="external">github</a></li>
+</ul>
+<h5 id="mac-安装"><a href="#mac-安装" class="headerlink" title="mac  安装"></a>mac  安装</h5><p>  先用composer 全局安装<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">composer</span> <span class="meta">global</span> <span class="meta">require</span> psy/psysh</div></pre></td></tr></table></figure></p>
+<p>安装完毕后，psysh已经安装到<code>/Users/{用户名}/.composer/vendor/psy/psysh</code>目录下<br>此时，你可以直接运行：<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/Users/</span>&#123;用户名&#125;<span class="regexp">/.composer/</span>vendor<span class="regexp">/psy/</span>psysh<span class="regexp">/bin/</span>psysh</div></pre></td></tr></table></figure></p>
+<p>为了使用方便，建议将它加入到环境变量：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PATH="/Users/&#123;用户名&#125;/.composer/vendor/psy/psysh/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line">$ <span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure></p>
+<p>然后在bash中运行psysh就可以使用</p>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><h5 id="自动完成"><a href="#自动完成" class="headerlink" title="自动完成"></a>自动完成</h5><blockquote>
+<p>PsySH可以像控制台那样，按下两次[tab]键自动补全，帮你自动完成变量名，函数，类，方法，属性，甚至是文件</p>
+</blockquote>
+<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>在运行时忘记参数怎么办？PsySH的文档功能可以让你即时查看文档。<br>PsySH的文档存放在~/.local/share/psysh/。<br>下载文档：<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd ~/.local/share</div><div class="line">mkdir psysh</div><div class="line">cd psysh</div><div class="line">### 中文文档</div><div class="line">wget http:<span class="comment">//psysh.org/manual/zh/php_manual.sqlite</span></div><div class="line">### 英文文档</div><div class="line">wget http:<span class="comment">//psysh.org/manual/en/php_manual.sqlite</span></div></pre></td></tr></table></figure></p>
+<p>重新打开psysh<br><img src="http://o9dm67cfv.bkt.clouddn.com/md2016/1482121723739.png" alt=""></p>
+<h3 id="原文地址"><a href="#原文地址" class="headerlink" title="原文地址"></a>原文地址</h3><p><a href="http://www.php100.com/html/dujia/2016/0216/8989.html" target="_blank" rel="external">http://www.php100.com/html/dujia/2016/0216/8989.html</a></p>
+</div> 
+          <a class="article-more-a" href="/2016/12/19/psysh-php交互式控制台/#more">more >></a>
+        
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>你的鼓励是我最大的动力<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="http://o9dm67cfv.bkt.clouddn.com/2016/1481886363188.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -210,117 +201,37 @@
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
 	</div>
 
       
+	<div class="article-category tagcloud">
+	<i class="icon-book icon"></i>
+	<a class="article-category-link" href="/categories/php/">php</a>
+	</div>
+
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/19/psysh-php交互式控制台/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://qiprince.com/2016/12/16/针对于一台电脑配置不同主机的git设置/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-  
-<nav id="article-nav">
-  
-    <a href="/2016/12/16/phpstorm配置xdebug/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          phpstorm配置xdebug
-        
-      </div>
-    </a>
+
+
+
+
+
+
+
   
   
-    <a href="/2016/12/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="针对于一台电脑配置不同主机的git设置" data-title="[object Object]" data-url="https://qiprince.com/2016/12/16/针对于一台电脑配置不同主机的git设置/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"qiprince"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
-
 
           </div>
         </div>
@@ -342,10 +253,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		root: "/",
 		innerArchive: true
@@ -373,7 +284,7 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">headgit</a>
+                <a href="javascript:void(0)">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -381,15 +292,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux</a>
+                <a href="javascript:void(0)">css</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux,php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux php</a>
+                <a href="javascript:void(0)">javascript</a>
               </li>
             
             <div class="clearfix"></div>

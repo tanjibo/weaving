@@ -157,24 +157,40 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-psysh-php交互式控制台" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/17/hexo/">针对于一台电脑配置不同主机的git设dd置</a>
+      <a class="article-title" href="/2016/12/19/psysh-php交互式控制台/">psysh--php交互式控制台</a>
     </h1>
   
 
-        <a href="/2016/12/17/hexo/" class="archive-article-date">
-  	<time datetime="2016-12-16T17:06:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-17</time>
+        <a href="/2016/12/19/psysh-php交互式控制台/" class="archive-article-date">
+  	<time datetime="2016-12-19T04:37:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-19</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        
+         <div style="overflow:hidden;height:322px;"><h5 id="psysh-官网"><a href="#psysh-官网" class="headerlink" title="psysh 官网"></a>psysh 官网</h5><ul>
+<li><a href="http://https://github.com/bobthecow/psysh" target="_blank" rel="external">github</a></li>
+</ul>
+<h5 id="mac-安装"><a href="#mac-安装" class="headerlink" title="mac  安装"></a>mac  安装</h5><p>  先用composer 全局安装<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">composer</span> <span class="meta">global</span> <span class="meta">require</span> psy/psysh</div></pre></td></tr></table></figure></p>
+<p>安装完毕后，psysh已经安装到<code>/Users/{用户名}/.composer/vendor/psy/psysh</code>目录下<br>此时，你可以直接运行：<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/Users/</span>&#123;用户名&#125;<span class="regexp">/.composer/</span>vendor<span class="regexp">/psy/</span>psysh<span class="regexp">/bin/</span>psysh</div></pre></td></tr></table></figure></p>
+<p>为了使用方便，建议将它加入到环境变量：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PATH="/Users/&#123;用户名&#125;/.composer/vendor/psy/psysh/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line">$ <span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure></p>
+<p>然后在bash中运行psysh就可以使用</p>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><h5 id="自动完成"><a href="#自动完成" class="headerlink" title="自动完成"></a>自动完成</h5><blockquote>
+<p>PsySH可以像控制台那样，按下两次[tab]键自动补全，帮你自动完成变量名，函数，类，方法，属性，甚至是文件</p>
+</blockquote>
+<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>在运行时忘记参数怎么办？PsySH的文档功能可以让你即时查看文档。<br>PsySH的文档存放在~/.local/share/psysh/。<br>下载文档：<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd ~/.local/share</div><div class="line">mkdir psysh</div><div class="line">cd psysh</div><div class="line">### 中文文档</div><div class="line">wget http:<span class="comment">//psysh.org/manual/zh/php_manual.sqlite</span></div><div class="line">### 英文文档</div><div class="line">wget http:<span class="comment">//psysh.org/manual/en/php_manual.sqlite</span></div></pre></td></tr></table></figure></p>
+<p>重新打开psysh<br><img src="http://o9dm67cfv.bkt.clouddn.com/md2016/1482121723739.png" alt=""></p>
+<h3 id="原文地址"><a href="#原文地址" class="headerlink" title="原文地址"></a>原文地址</h3><p><a href="http://www.php100.com/html/dujia/2016/0216/8989.html" target="_blank" rel="external">http://www.php100.com/html/dujia/2016/0216/8989.html</a></p>
+</div> 
+          <a class="article-more-a" href="/2016/12/19/psysh-php交互式控制台/#more">more >></a>
         
       
 
@@ -189,10 +205,15 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+	<i class="icon-book icon"></i>
+	<a class="article-category-link" href="/categories/php/">php</a>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/17/hexo/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/12/19/psysh-php交互式控制台/">展开全文 >></a>
         </p>
       
 
@@ -228,7 +249,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="mac-php70-安装xdebug"><a href="#mac-php70-安装xdebug" class="headerlink" title="mac php70 安装xdebug"></a>mac php70 安装xdebug</h2><h4 id="1-下载xdebug-扩展"><a href="#1-下载xdebug-扩展" class="headerlink" title="1.下载xdebug 扩展"></a>1.下载xdebug 扩展</h4><ul>
+        
+         <div style="overflow:hidden;height:322px;"><h2 id="mac-php70-安装xdebug"><a href="#mac-php70-安装xdebug" class="headerlink" title="mac php70 安装xdebug"></a>mac php70 安装xdebug</h2><h4 id="1-下载xdebug-扩展"><a href="#1-下载xdebug-扩展" class="headerlink" title="1.下载xdebug 扩展"></a>1.下载xdebug 扩展</h4><ul>
 <li>php 官方扩展网站下载<a href="http://pecl.php.net/package/xdebug" target="_blank" rel="external">网址</a></li>
 <li>使用wget下载，可能网速比较啃爹，可以翻墙下载,然后就是安装就可以了<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget <span class="string">http:</span><span class="comment">//pecl.php.net/get/xdebug-2.5.0RC1.tgz</span></div><div class="line">tar zxvf xdebug<span class="number">-2.5</span><span class="number">.0</span>RC1.tgz</div><div class="line">cd <span class="regexp">/usr/</span>local/xdebug<span class="number">-2.5</span><span class="number">.0</span>RC1</div><div class="line">sudo <span class="regexp">/usr/</span>local<span class="regexp">/Cellar/</span>php70<span class="regexp">/7.0.6/</span>bin/phpize (可以直接使用phpize)</div><div class="line">./configure</div><div class="line">make</div><div class="line">cp modules<span class="regexp">/xdebug.so /</span>usr<span class="regexp">/local/</span>Cellar/php70-xdebug (如果没有php70-xdebug,可以创建一个)</div></pre></td></tr></table></figure>
 </li>
@@ -257,7 +279,9 @@
 <li>设置项目<br><img src="http://o9dm67cfv.bkt.clouddn.com/2016/1480849427514.png" alt=""></li>
 </ul>
 <p>参看文章：<a href="http://www.cnblogs.com/xujian2016/p/5548921.html" target="_blank" rel="external">http://www.cnblogs.com/xujian2016/p/5548921.html</a></p>
-
+</div> 
+          <a class="article-more-a" href="/2016/12/16/phpstorm配置xdebug/#more">more >></a>
+        
       
 
       
@@ -292,59 +316,6 @@
 
 
   
-    <article id="post-针对于一台电脑配置不同主机的git设置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/16/针对于一台电脑配置不同主机的git设置/">[object Object]</a>
-    </h1>
-  
-
-        <a href="/2016/12/16/针对于一台电脑配置不同主机的git设置/" class="archive-article-date">
-  	<time datetime="2016-12-16T09:06:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-16</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/16/针对于一台电脑配置不同主机的git设置/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -352,7 +323,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/16/hello-world/">Hello World</a>
+      <a class="article-title" href="/2016/12/16/hello-world/">惊鸿一面</a>
     </h1>
   
 
@@ -363,16 +334,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        
+         <div style="overflow:hidden;height:322px;"><p>翻手为云 覆手为雨<br>金盆洗手 止风雨</p>
+<p>不恋红尘 却难舍回忆</p>
+<p>每一段都有你</p>
+<p>年少初遇 常在我心</p>
+<p>多年不减你深情</p>
+<p>江山如画又怎能比拟<br>你送我的风景</p>
+<p>柳下闻瑶琴 起舞和一曲</p>
+<p>仿佛映当年 翩若惊鸿影</p>
+<p>谁三言两语 撩拨了情意</p>
+<p>谁一颦一笑 摇曳了星云</p>
+<p>纸扇藏伏笔 玄机诗文里</p>
+<p>紫烟燃心语 留香候人寻</p>
+<p>史书列豪杰 功过有几许<br>我今生何求 惟你</p>
+<p>年少初遇 常在我心<br>多年不减你深情</p>
+<p>江山如画又怎能比拟</p>
+<p>你送我的风景</p>
+<p>柳下闻瑶琴 起舞和一曲</p>
+<p>仿佛映当年 翩若惊鸿影</p>
+<p>谁三言两语 撩拨了情意</p>
+<p>谁一颦一笑 摇曳了星云<br>纸扇藏伏笔 玄机诗文里</p>
+<p>紫烟燃心语 留香候人寻<br>史书列豪杰 功过有几许</p>
+<p>我今生何求 惟你</p>
+<p>远山传来清晨悠然的曲笛<br>晓风掠走光阴<br>残月沉霜鬓里</p>
+<p>有了你<br>恩怨都似飞鸿踏雪泥</p>
+<p>柳下闻瑶琴 起舞和一曲</p>
+<p>仿佛映当年 翩若惊鸿影<br>谁三言两语 撩拨了情意<br>谁一颦一笑 摇曳了星云<br>纸扇藏伏笔 玄机诗文里<br>紫烟燃心语 留香候人寻<br>史书列豪杰 功过有几许<br>我今生何求 惟你</p>
+<p>我今生何求 惟你</p>
+</div> 
+          <a class="article-more-a" href="/2016/12/16/hello-world/#more">more >></a>
+        
       
 
       
@@ -382,10 +374,15 @@
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 	</div>
 
       
+	<div class="article-category tagcloud">
+	<i class="icon-book icon"></i>
+	<a class="article-category-link" href="/categories/岁月/">岁月</a><a class="article-category-link" href="/categories/岁月/无情/">无情</a><a class="article-category-link" href="/categories/岁月/无情/weaving/">weaving</a>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -460,7 +457,7 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">headgit</a>
+                <a href="javascript:void(0)">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -468,15 +465,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux</a>
+                <a href="javascript:void(0)">css</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux,php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux php</a>
+                <a href="javascript:void(0)">javascript</a>
               </li>
             
             <div class="clearfix"></div>

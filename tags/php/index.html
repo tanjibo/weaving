@@ -157,24 +157,40 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-psysh-php交互式控制台" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/17/hexo/">针对于一台电脑配置不同主机的git设dd置</a>
+      <a class="article-title" href="/2016/12/19/psysh-php交互式控制台/">psysh--php交互式控制台</a>
     </h1>
   
 
-        <a href="/2016/12/17/hexo/" class="archive-article-date">
-  	<time datetime="2016-12-16T17:06:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-17</time>
+        <a href="/2016/12/19/psysh-php交互式控制台/" class="archive-article-date">
+  	<time datetime="2016-12-19T04:37:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-19</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        
+         <div style="overflow:hidden;height:322px;"><h5 id="psysh-官网"><a href="#psysh-官网" class="headerlink" title="psysh 官网"></a>psysh 官网</h5><ul>
+<li><a href="http://https://github.com/bobthecow/psysh" target="_blank" rel="external">github</a></li>
+</ul>
+<h5 id="mac-安装"><a href="#mac-安装" class="headerlink" title="mac  安装"></a>mac  安装</h5><p>  先用composer 全局安装<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">composer</span> <span class="meta">global</span> <span class="meta">require</span> psy/psysh</div></pre></td></tr></table></figure></p>
+<p>安装完毕后，psysh已经安装到<code>/Users/{用户名}/.composer/vendor/psy/psysh</code>目录下<br>此时，你可以直接运行：<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/Users/</span>&#123;用户名&#125;<span class="regexp">/.composer/</span>vendor<span class="regexp">/psy/</span>psysh<span class="regexp">/bin/</span>psysh</div></pre></td></tr></table></figure></p>
+<p>为了使用方便，建议将它加入到环境变量：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PATH="/Users/&#123;用户名&#125;/.composer/vendor/psy/psysh/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line">$ <span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure></p>
+<p>然后在bash中运行psysh就可以使用</p>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><h5 id="自动完成"><a href="#自动完成" class="headerlink" title="自动完成"></a>自动完成</h5><blockquote>
+<p>PsySH可以像控制台那样，按下两次[tab]键自动补全，帮你自动完成变量名，函数，类，方法，属性，甚至是文件</p>
+</blockquote>
+<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>在运行时忘记参数怎么办？PsySH的文档功能可以让你即时查看文档。<br>PsySH的文档存放在~/.local/share/psysh/。<br>下载文档：<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd ~/.local/share</div><div class="line">mkdir psysh</div><div class="line">cd psysh</div><div class="line">### 中文文档</div><div class="line">wget http:<span class="comment">//psysh.org/manual/zh/php_manual.sqlite</span></div><div class="line">### 英文文档</div><div class="line">wget http:<span class="comment">//psysh.org/manual/en/php_manual.sqlite</span></div></pre></td></tr></table></figure></p>
+<p>重新打开psysh<br><img src="http://o9dm67cfv.bkt.clouddn.com/md2016/1482121723739.png" alt=""></p>
+<h3 id="原文地址"><a href="#原文地址" class="headerlink" title="原文地址"></a>原文地址</h3><p><a href="http://www.php100.com/html/dujia/2016/0216/8989.html" target="_blank" rel="external">http://www.php100.com/html/dujia/2016/0216/8989.html</a></p>
+</div> 
+          <a class="article-more-a" href="/2016/12/19/psysh-php交互式控制台/#more">more >></a>
         
       
 
@@ -189,72 +205,15 @@
 	</div>
 
       
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/17/hexo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <a href="/2016/12/16/hello-world/" class="archive-article-date">
-  	<time datetime="2016-12-16T07:04:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-16</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+	<div class="article-category tagcloud">
+	<i class="icon-book icon"></i>
+	<a class="article-category-link" href="/categories/php/">php</a>
 	</div>
 
-      
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/16/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/12/19/psysh-php交互式控制台/">展开全文 >></a>
         </p>
       
 
@@ -325,7 +284,7 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">headgit</a>
+                <a href="javascript:void(0)">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -333,15 +292,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux</a>
+                <a href="javascript:void(0)">css</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux,php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">linux php</a>
+                <a href="javascript:void(0)">javascript</a>
               </li>
             
             <div class="clearfix"></div>
